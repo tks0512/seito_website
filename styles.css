@@ -1,0 +1,211 @@
+/* https://allabout.co.jp/gm/gc/470618/ */
+
+@font-face {
+    font-family: Mplus1Code-BBold;
+    src: url(font/Mplus1Code-Bold.ttf);
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: none;
+    color: rgb(0, 140, 255);
+    padding: 0.5em 1em;
+    position: fixed;
+    top: 17px;
+}
+
+#menu-button {
+    width: 50px;
+    height: 50px;
+    background: #156082;
+    color: white;
+    border: 0px;
+    font-size: 1.7em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -16px;
+    margin-top: -25px;
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    margin-top: 0px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Mplus1Code-BBold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Mplus1Code-BBold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav.visible {
+    transform: translateX(0);
+}
+
+#menu-button.menu-open {
+    transform: translateX(250px);
+}
+
+main {
+    padding: 1em;
+    margin-left: 0%;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.fuchidori {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(114, 165, 140);
+    -webkit-text-stroke: 1px #888;
+    text-stroke: 1px #888;
+    padding-top: 10px;
+  }
+
+h2 {
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #0070c0;
+    padding-left: 15px;
+    margin-bottom: 50px ;
+    margin-top: 60px;
+}
+
+#oneonone {
+    background: linear-gradient(270deg, #ffa958 0%, #88d907 40%, #3ba7ff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#A {
+    font-size: 1.17em;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#daigra {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(270deg, #58c6ff 0%, #076ad9 40%, #ff3bef 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#graph {
+    width: 90%;
+    max-width: 600px;
+    margin-left: 5%;
+}
+
+#map {
+    width: 100%;
+}
+
+#right {
+    float: right;
+}
+
+#right30 {
+    padding-left: 30px;
+}
+
+/* 一番上までスクロール */
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+a[href^="http"]:after,
+a[href^="//"]:after {
+  margin: 0 0 0 3px;
+  font-family: "Font Awesome 5 Free";
+  content: '\f35d';
+  font-weight: 900;
+}
+a[href^="https://www.rectus.co.jp/"]:after {
+  margin: inherit;
+  font-family: inherit;
+  content: '';
+  font-weight: inherit;
+}
+
